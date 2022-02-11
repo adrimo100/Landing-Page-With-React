@@ -4,7 +4,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 export const Navbar = () => {
 	return (
-		<header className="navbar navbar-expand-md navbar-dark bd-navbar bg-dark sticky-top text-right">
+		<header className="navbar navbar-expand-md navbar-dark bd-navbar bg-dark sticky-top text-right w-100">
 			<nav className="container-xxl flex-wrap flex-sm-nowrap d-flex w-100 mx-5 px-5">
 				<a className="navbar-brand d-flex" href="#">
 					<img

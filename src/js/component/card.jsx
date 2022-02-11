@@ -1,32 +1,27 @@
 import React from "react";
+import propTypes from "prop-types";
 
 import Button from "./button.jsx";
 import rigoImage from "../../img/rigo-baby.jpg";
 
-const Card = (props) => {
+const Card = () => {
 	return (
-		<div className="col-lg-12 col-xl-3 mx-auto px-auto text-center border">
-			<div className="m-0 p-0">
-				<img src={rigoImage} alt="" style={ImageStyle} />
-			</div>
-
-			<div className="row d-flex">
-				<h3 className="mt-3 w-100 text-center">Card Title</h3>
-				<p className="text-center p-2">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Earum assumenda voluptate, laboriosam aperiam obcaecati
-					inventore rem voluptatem odit praesentium dolor, delectus
-					reiciendis distinctio in veniam cumque exercitationem
-					tempore id eligendi.
+		<div class="card m-2" style={{ width: "18rem" }}>
+			<img src={rigoImage} class="card-img-top" alt="..." />
+			<div class="card-body text-center p-0">
+				<h5 class="card-title mx-1 mt-1">Card title</h5>
+				<p class="card-text mx-1">
+					Some quick example text to build on the card title and make
+					up the bulk of the card's content.
 				</p>
-				<div className="bg-light w-100 d-flex justify-content-center align-items-center p-3 border">
-					<Button buttonLabel="Find Out More!" />
+				<div className="border w-100 py-3">
+					<a href="#" class="btn btn-primary">
+						Go somewhere
+					</a>
 				</div>
 			</div>
 		</div>
 	);
 };
-
-const ImageStyle = { height: "50%", width: "75%" };
 
 export default Card;

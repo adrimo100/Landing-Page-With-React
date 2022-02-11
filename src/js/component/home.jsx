@@ -12,7 +12,7 @@ import Footer from "./footer.jsx";
 //create your first component
 const Home = () => {
 	return (
-		<div className="">
+		<div className="container-fluid m-0 p-0">
 			<Navbar />
 			<MainBody />
 			<Footer />
